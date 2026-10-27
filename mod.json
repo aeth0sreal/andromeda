@@ -1,0 +1,33 @@
+{
+    "geode": "4.0.0",
+    "gd": {
+        "win": "2.2074",
+        "android32": "2.2074",
+        "android64": "2.2074",
+        "mac": "2.2074",
+        "ios": "2.2074"
+    },
+    "id": "aeth0s.andromeda",
+    "name": "Andromeda",
+    "version": "v0.1.0",
+    "developer": "aeth0s",
+    "description": "Input buffer that delays clicks which would kill you until a safe frame. This is a cheat: attempts are marked as test mode so nothing is submitted.",
+    "settings": {
+        "lookahead": {
+            "type": "int",
+            "name": "Lookahead frames",
+            "description": "How many frames ahead to simulate when checking if a click kills you.",
+            "default": 60,
+            "min": 10,
+            "max": 240
+        },
+        "max-delay": {
+            "type": "int",
+            "name": "Max buffer (frames)",
+            "description": "Furthest a click may be delayed to find a safe frame.",
+            "default": 6,
+            "min": 1,
+            "max": 30
+        }
+    }
+}
